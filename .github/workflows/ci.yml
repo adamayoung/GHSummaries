@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  workflow_dispatch:
+
+jobs:
+  job1:
+    name: Job 1
+    runs-on: ubunutu-latest
+    steps:
+      - name: step1
+        run: echo "### Hello from Job1/Step1! :rocket:" >> $GITHUB_STEP_SUMMARY
+      
+
+  job2:
+    name: Job 2
+    runs-on: ubunutu-latest
+    steps:
+      - name: step1
+        run: echo "### Hello from Job2/Step1! :rocket:" >> $GITHUB_STEP_SUMMARY
